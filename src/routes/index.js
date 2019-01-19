@@ -6,10 +6,12 @@ import { Route, IndexRoute} from  'react-router';
 import App from '../components/App';
 import HomePage from '../components/Home';
 import AboutPage from '../components/About';
+import CoursesPage from '../components/Course/Courses';
 
 export default (
     <Route path='/' component={App}>
         <IndexRoute  component={HomePage} />
         <Route path="about" component={AboutPage} />
+        <Route path="courses" component={CoursesPage} />
     </Route>
 )
