@@ -5,6 +5,6 @@ import React from 'react';
 import {Link, IndexLink} from 'react-router'
 export default (props)=>
     <nav>
-        <IndexLink to="/" >Home</IndexLink>
-        <Link to="/about">About</Link>
+        <IndexLink to="/" activeClassName="active" >Home</IndexLink>
+        <Link to="/about" activeClassName="active">About</Link>
     </nav>
