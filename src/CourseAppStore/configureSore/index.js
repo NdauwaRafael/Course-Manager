@@ -3,12 +3,10 @@
  */
 import {createStore, applyMiddleware} from "redux";
 import rootReducer from '../reducers/CourseReducer';
-import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
 
 export default (initialState)=>{
     return createStore(
         initialState,
-        rootReducer,
-        applyMiddleware(reduxImmutableStateInvariant())
+        rootReducer
     )
 }
