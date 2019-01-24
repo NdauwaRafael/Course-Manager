@@ -9,8 +9,8 @@ import CoursesPage from '../components/Course/Courses';
 
 export default (
     <Switch>
-        <Route path="/" component={HomePage} />
-        <Route path="about" component={AboutPage} />
-        <Route path="courses" component={CoursesPage} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={CoursesPage} />
     </Switch>
 )
