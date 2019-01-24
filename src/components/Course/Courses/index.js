@@ -4,15 +4,23 @@
 import React, {Component} from 'react';
 
 export default class extends Component {
-    constructor(props) {
+    constructor(props, context) {
         super(props);
         this.state = {
             courses: [],
             course: {
                 title: null
             }
-        }
+        };
     };
+    handleChange(event) {
+        let field = event.target.name;
+        let value = event.target.value;
+        let course = this.state.course;
+        course[field] = value;
+        this.setState({course});
+    };
+
 
     render() {
         return (
@@ -33,7 +41,7 @@ export default class extends Component {
                                 id="grid-first-name"
                                 type="text"
                                 placeholder="Introduction to Redux"
-                                onChange={this.onChange}
+                                onChange={this.handleChange}
                                 value={this.course.title}/>
                             <p className="text-red text-xs italic">Please fill out this field.</p>
                         </div>
@@ -49,7 +57,7 @@ export default class extends Component {
                                 id="grid-last-name"
                                 type="text"
                                 placeholder="Programming"
-                                onChange={this.onChange}
+                                onChange={this.handleChange}
                                 value={this.course.category}/>
                         </div>
                     </div>
@@ -63,7 +71,7 @@ export default class extends Component {
                                 className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 id="grid-password"
                                 placeholder="This is a demo description of a course."
-                                onChange={this.onChange}
+                                onChange={this.handleChange}
                                 value={this.course.description}/>
                             <p className="text-grey-dark text-xs italic">Make it as long and as crazy as you'd like</p>
                         </div>
