@@ -2,6 +2,7 @@
  * Created by Raphael Karanja on 2019-01-19.
  */
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions'
@@ -29,20 +30,20 @@ class CoursesPage extends Component {
         this.setState({course});
     };
 
-    onSave(){
-        const {course} =  this.state;
-       confirm({
+    onSave() {
+        const {course} = this.state;
+        confirm({
             text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
-            cancelCallback:  ()=> {
-                alert({ type: 3, text: 'Aw, why not? :(', time: 2 })
+            cancelCallback: () => {
+                alert({type: 3, text: 'Aw, why not? :(', time: 2})
             },
-            submitCallback:  ()=> {
+            submitCallback: () => {
                 this.props.dispatch(courseActions.createCourse(course))
             }
         })
     };
 
-    courseRow(course, index){
+    courseRow(course, index) {
         return (
             <tr key={index}>
                 <td>{course.title}</td>
@@ -53,10 +54,9 @@ class CoursesPage extends Component {
     }
 
 
-
     render() {
         const {course} = this.state;
-        const {courses} =this.props;
+        const {courses} = this.props;
         return (
             <div>
                 <div className="text-grey-dark flex items-center mb-5">
@@ -72,9 +72,9 @@ class CoursesPage extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                            {
-                                courses.map(this.courseRow)
-                            }
+                        {
+                            courses.map(this.courseRow)
+                        }
                         </tbody>
                     </table>
                 </div>
@@ -145,10 +145,15 @@ class CoursesPage extends Component {
         );
     }
 }
-const mapStateToProps = (state, ownProps)=>{
-        return {
-            courses: state.courses
-        }
+
+CoursesPage.propTypes = {
+    dispatch: PropTypes.func,
+    courses: PropTypes.array
+};
+const mapStateToProps = (state, ownProps) => {
+    return {
+        courses: state.courses
+    }
 };
 
 export default connect(
