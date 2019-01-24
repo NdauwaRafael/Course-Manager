@@ -2,6 +2,8 @@
  * Created by Raphael Karanja on 2019-01-19.
  */
 import React, {Component} from 'react';
+import {confirm, alert} from 'notie';
+import iziToast from 'izitoast'
 
 export default class extends Component {
     constructor(props, context) {
@@ -14,6 +16,7 @@ export default class extends Component {
 
         this.handleChange = this.handleChange.bind(this);
     };
+
     handleChange(event) {
         let field = event.target.name;
         let value = event.target.value;
@@ -22,6 +25,17 @@ export default class extends Component {
         this.setState({course});
     };
 
+    onSave(){
+       confirm({
+            text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
+            cancelCallback: function () {
+                alert({ type: 3, text: 'Aw, why not? :(', time: 2 })
+            },
+            submitCallback: function () {
+               alert({ type: 1, text: 'Good choice! :D', time: 2 })
+            }
+        })
+    }
 
     render() {
         const {course} = this.state;

@@ -5,3 +5,7 @@ a:hover {
 a {
     text-decoration: none;
 }
+
+.notie-container {
+    box-shadow: none;
+}

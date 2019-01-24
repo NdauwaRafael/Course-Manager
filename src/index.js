@@ -2,6 +2,8 @@ import React from 'react';
 import 'normalize.css/normalize.css';
 import './assets/css/normalize.css'
 import 'tailwindcss/dist/tailwind.min.css';
+import 'notie/dist/notie.min.css';
+import 'izitoast/dist/css/iziToast.min.css';
 import {render} from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 
