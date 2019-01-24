@@ -8,4 +8,9 @@ a {
 
 .notie-container {
     box-shadow: none;
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 200;
+    font-size: 1.15rem !important;
+    line-height: 1.5;
+    color: #8795a1;
 }

@@ -3,7 +3,6 @@
  */
 import React, {Component} from 'react';
 import {confirm, alert} from 'notie';
-import iziToast from 'izitoast'
 
 export default class extends Component {
     constructor(props, context) {
