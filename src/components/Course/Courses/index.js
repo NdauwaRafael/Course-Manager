@@ -7,11 +7,12 @@ export default class extends Component {
     constructor(props, context) {
         super(props);
         this.state = {
-            courses: [],
             course: {
                 title: null
             }
         };
+
+        this.handleChange = this.handleChange.bind(this);
     };
     handleChange(event) {
         let field = event.target.name;
@@ -23,6 +24,7 @@ export default class extends Component {
 
 
     render() {
+        const {course} = this.state;
         return (
             <div>
                 <div className="text-grey-dark flex items-center mb-5">
@@ -41,8 +43,9 @@ export default class extends Component {
                                 id="grid-first-name"
                                 type="text"
                                 placeholder="Introduction to Redux"
+                                name="title"
                                 onChange={this.handleChange}
-                                value={this.course.title}/>
+                                value={course.title}/>
                             <p className="text-red text-xs italic">Please fill out this field.</p>
                         </div>
                     </div>
@@ -56,9 +59,10 @@ export default class extends Component {
                                 className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 id="grid-last-name"
                                 type="text"
+                                name="category"
                                 placeholder="Programming"
                                 onChange={this.handleChange}
-                                value={this.course.category}/>
+                                value={course.category}/>
                         </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-10">
@@ -71,8 +75,9 @@ export default class extends Component {
                                 className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 id="grid-password"
                                 placeholder="This is a demo description of a course."
+                                name="description"
                                 onChange={this.handleChange}
-                                value={this.course.description}/>
+                                value={this.state.course.description}/>
                             <p className="text-grey-dark text-xs italic">Make it as long and as crazy as you'd like</p>
                         </div>
                     </div>
