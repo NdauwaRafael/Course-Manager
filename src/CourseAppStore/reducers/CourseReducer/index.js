@@ -6,7 +6,7 @@ export default (state=[], action)=>{
         case 'CREATE_COURSE':
                 return [
                     ...state,
-                    Object.assign({},action.course )
+                    Object.assign({}, action.course )
                 ];
         default:
             return state;

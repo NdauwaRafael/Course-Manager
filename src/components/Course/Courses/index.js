@@ -2,18 +2,23 @@
  * Created by Raphael Karanja on 2019-01-19.
  */
 import React, {Component} from 'react';
+import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
+import * as courseActions from '../../../CourseAppStore/actions/CourseActions'
 
-export default class extends Component {
+class CoursesPage extends Component {
     constructor(props, context) {
         super(props);
         this.state = {
             course: {
-                title: null
+                title: '',
+                category: '',
+                description: ''
             }
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.onSave = this.onSave.bind(this);
     };
 
     handleChange(event) {
@@ -25,23 +30,53 @@ export default class extends Component {
     };
 
     onSave(){
+        const {course} =  this.state;
        confirm({
             text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
-            cancelCallback: function () {
+            cancelCallback:  ()=> {
                 alert({ type: 3, text: 'Aw, why not? :(', time: 2 })
             },
-            submitCallback: function () {
-               alert({ type: 1, text: 'Good choice! :D', time: 2 })
+            submitCallback:  ()=> {
+                this.props.dispatch(courseActions.createCourse(course))
             }
         })
+    };
+
+    courseRow(course, index){
+        return (
+            <tr key={index}>
+                <td>{course.title}</td>
+                <td>{course.category}</td>
+                <td>show</td>
+            </tr>
+        )
     }
+
+
 
     render() {
         const {course} = this.state;
+        const {courses} =this.props;
         return (
             <div>
                 <div className="text-grey-dark flex items-center mb-5">
                     Courses
+                </div>
+                <div className="mb-5">
+                    <table className="w-full text-left table-collapse">
+                        <thead>
+                        <tr>
+                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Title</th>
+                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Category</th>
+                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                courses.map(this.courseRow)
+                            }
+                        </tbody>
+                    </table>
                 </div>
                 <div className="text-black font-bold text-xl mb-5">Add a Course</div>
                 <form className="w-full max-w-md">
@@ -110,3 +145,12 @@ export default class extends Component {
         );
     }
 }
+const mapStateToProps = (state, ownProps)=>{
+        return {
+            courses: state.courses
+        }
+};
+
+export default connect(
+    mapStateToProps
+)(CoursesPage);

@@ -1,12 +1,14 @@
 /**
  * Created by Raphael Karanja on 2019-01-24.
  */
-import {createStore, applyMiddleware} from "redux";
-import rootReducer from '../reducers/CourseReducer';
+import rootReducer from '../reducers';
+import {createStore} from "redux";
 
-export default (initialState)=>{
+const configureStore = (initialState)=>{
     return createStore(
-        initialState,
         rootReducer
-    )
-}
+    );
+};
+export default configureStore;
+
+
