@@ -1,6 +1,7 @@
 import React from 'react';
-import 'tailwindcss/dist/tailwind.min.css';
 import 'normalize.css/normalize.css';
+import './assets/css/normalize.css'
+import 'tailwindcss/dist/tailwind.min.css';
 import {render} from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 
