@@ -2,7 +2,7 @@
  * Created by Raphael Karanja on 2019-01-25.
  */
 import React, {Component} from 'react';
-import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
+import * as courseActions from '../../../../CourseAppStore/actions/CourseActions';
 import {bindActionCreators} from "redux";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux'
@@ -19,7 +19,9 @@ class ManageCourses extends Component {
     render() {
         return (
             <div>
-
+                <h1>
+                    Manage Page
+                </h1>
             </div>
         );
     }
