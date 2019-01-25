@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
+import {bindActionCreators} from "redux";
 
 class CoursesPage extends Component {
     constructor(props, context) {
@@ -38,7 +39,7 @@ class CoursesPage extends Component {
                 alert({type: 3, text: 'Aw, why not? :(', time: 2})
             },
             submitCallback: () => {
-                this.props.createCourse(course)
+                this.props.actions.createCourse(course);
             }
         })
     };
@@ -152,9 +153,8 @@ class CoursesPage extends Component {
 }
 
 CoursesPage.propTypes = {
-    // dispatch: PropTypes.func.isRequired,
     courses: PropTypes.array.isRequired,
-    createCourse: PropTypes.func.isRequired
+    actions: PropTypes.object.isRequired
 };
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -164,7 +164,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch)=>{
         return {
-            createCourse: course => dispatch(courseActions.createCourse(course))
+            actions: bindActionCreators(courseActions, dispatch)
         }
 };
 
