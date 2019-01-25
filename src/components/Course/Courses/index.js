@@ -7,6 +7,7 @@ import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
 import {bindActionCreators} from "redux";
+import CourseList from './CourseList'
 
 class CoursesPage extends Component {
     constructor(props, context) {
@@ -44,20 +45,6 @@ class CoursesPage extends Component {
         })
     };
 
-    courseRow(course, index) {
-        return (
-            <tr key={index}>
-                <td>{course.title}</td>
-                <td>{course.category}</td>
-                <td>
-                    <button
-                        className="bg-transparent hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded">
-                        show
-                    </button>
-                </td>
-            </tr>
-        )
-    }
 
 
     render() {
@@ -69,20 +56,7 @@ class CoursesPage extends Component {
                     Courses
                 </div>
                 <div className="mb-5">
-                    <table className="w-full text-left table-collapse">
-                        <thead>
-                        <tr>
-                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Title</th>
-                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Category</th>
-                            <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Action</th>
-                        </tr>
-                        </thead>
-                        <tbody className="align-baseline">
-                        {
-                            courses.map(this.courseRow)
-                        }
-                        </tbody>
-                    </table>
+                    <CourseList courses={courses}/>
                 </div>
                 <div className="text-black font-bold text-xl mb-5">Add a Course</div>
                 <form className="w-full max-w-md">
