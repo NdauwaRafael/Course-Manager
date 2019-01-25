@@ -153,8 +153,9 @@ class CoursesPage extends Component {
 }
 
 CoursesPage.propTypes = {
-    dispatch: PropTypes.func,
-    courses: PropTypes.array
+    dispatch: PropTypes.func.isRequired,
+    courses: PropTypes.array.isRequired,
+    createCourse: PropTypes.func.isRequired
 };
 const mapStateToProps = (state, ownProps) => {
     return {
