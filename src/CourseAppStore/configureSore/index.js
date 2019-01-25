@@ -10,7 +10,7 @@ const configureStore = (initialState)=>{
     return createStore(
         rootReducer,
         initialState,
-        applyMiddleware(thunk, reduxImmutableStatateInvariant)
+        applyMiddleware(thunk, reduxImmutableStatateInvariant())
     );
 };
 export default configureStore;
