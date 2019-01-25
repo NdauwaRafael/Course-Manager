@@ -5,8 +5,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
-import * as courseActions from '../../../CourseAppStore/actions/CourseActions'
-import mapDispatchToProps from "react-redux/es/connect/mapDispatchToProps";
+import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
 
 class CoursesPage extends Component {
     constructor(props, context) {
@@ -153,7 +152,7 @@ class CoursesPage extends Component {
 }
 
 CoursesPage.propTypes = {
-    dispatch: PropTypes.func.isRequired,
+    // dispatch: PropTypes.func.isRequired,
     courses: PropTypes.array.isRequired,
     createCourse: PropTypes.func.isRequired
 };
@@ -163,9 +162,9 @@ const mapStateToProps = (state, ownProps) => {
     }
 };
 
-const mapDispatchToProps = ()=>{
+const mapDispatchToProps = (dispatch)=>{
         return {
-            createCourse: course => dispatch(courseActions.createCourse(course));
+            createCourse: course => dispatch(courseActions.createCourse(course))
         }
 };
 
