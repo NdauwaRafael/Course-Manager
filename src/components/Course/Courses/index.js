@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux'
 import {confirm, alert} from 'notie';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions'
+import mapDispatchToProps from "react-redux/es/connect/mapDispatchToProps";
 
 class CoursesPage extends Component {
     constructor(props, context) {
@@ -38,7 +39,7 @@ class CoursesPage extends Component {
                 alert({type: 3, text: 'Aw, why not? :(', time: 2})
             },
             submitCallback: () => {
-                this.props.dispatch(courseActions.createCourse(course))
+                this.props.createCourse(course)
             }
         })
     };
@@ -48,7 +49,12 @@ class CoursesPage extends Component {
             <tr key={index}>
                 <td>{course.title}</td>
                 <td>{course.category}</td>
-                <td>show</td>
+                <td>
+                    <button
+                        className="bg-transparent hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded">
+                        show
+                    </button>
+                </td>
             </tr>
         )
     }
@@ -71,7 +77,7 @@ class CoursesPage extends Component {
                             <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Action</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="align-baseline">
                         {
                             courses.map(this.courseRow)
                         }
@@ -156,6 +162,13 @@ const mapStateToProps = (state, ownProps) => {
     }
 };
 
+const mapDispatchToProps = ()=>{
+        return {
+            createCourse: course => dispatch(courseActions.createCourse(course));
+        }
+};
+
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(CoursesPage);
