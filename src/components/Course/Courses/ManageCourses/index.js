@@ -2,10 +2,14 @@
  * Created by Raphael Karanja on 2019-01-25.
  */
 import React, {Component} from 'react';
+import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
+import {bindActionCreators} from "redux";
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux'
 
-export default class extends Component {
-    constructor(props){
-        super(props);
+class ManageCourses extends Component {
+    constructor(props, context){
+        super(props, context);
 
         this.state = {
 
@@ -15,8 +19,27 @@ export default class extends Component {
     render() {
         return (
             <div>
-                
+
             </div>
         );
     }
 }
+ManageCourses.propTypes = {
+    course: PropTypes.array.isRequired,
+    actions: PropTypes.object.isRequired
+};
+const mapStateToProps = (state, ownProps)=> {
+    return {
+        course: state.course
+    }
+};
+const mapDispatchToProps = (dispatch)=> {
+return {
+    actions: bindActionCreators(courseActions, dispatch)
+}
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ManageCourses)
