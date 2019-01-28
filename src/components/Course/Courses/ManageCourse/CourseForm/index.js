@@ -8,7 +8,7 @@ import TextArea from '../../../../Common/Form/Textarea';
 const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors}) => {
     return (
         <div>
-            <form className="w-full max-w-md">
+            <form className="w-full max-w-lg">
                 <TextInput
                     name="title"
                     value={course.title}

@@ -30,7 +30,8 @@ class ManageCourses extends Component {
         this.setState({course});
     };
 
-    onSave() {
+    onSave(e) {
+        e.preventDefault();
         const {course} = this.state;
         confirm({
             text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
@@ -47,7 +48,7 @@ class ManageCourses extends Component {
         // const {allAuthors} = this.props;
         const {course, errors} = this.state;
         return (
-                <div className="max-w-md w-full">
+                <div className="max-w-lg w-full">
                     <div
                         className="border-r border-b border-l border-grey-light lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
