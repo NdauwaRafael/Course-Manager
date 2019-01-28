@@ -53,7 +53,7 @@ class ManageCourses extends Component {
                 </h1>
                 <AddCourse onChange={this.handleChange}
                            course={course}
-                           allAuthors={allAuthors}
+                           allAuthors={[]}
                            onSave={this.onSave}
                            errors={errors}/>
             </div>
