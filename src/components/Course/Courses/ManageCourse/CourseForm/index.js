@@ -15,7 +15,7 @@ const CourseForm = (props) => {
                 onChange={onChange}
                 error={errors.title}/>
 
-                
+
             </form>
         </div>
     )
