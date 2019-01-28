@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 class Select extends Component {
 
-
     render() {
         const {name, value, label, error, onChange, options, defaultOption} = this.props;
         let validatorClass = '';
@@ -22,8 +21,9 @@ class Select extends Component {
                     <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor={name}>{label}</label>
                     <div className="relative">
                         <select
-                            className="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                            className={"block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-grey" + validatorClass}
                             id={name}
+                            value={value}
                             name={name}
                             ref={name}
                             onChange={onChange}>
