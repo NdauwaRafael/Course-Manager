@@ -30,8 +30,8 @@ class Select extends Component {
                             <option value="">{defaultOption}</option>
                             {
                                 options.map(option=>
-                                    <option value={option}>
-                                        {option}
+                                    <option value={option.value} key={option.value}>
+                                        {option.text}
                                     </option>)
                             }
                         </select>
