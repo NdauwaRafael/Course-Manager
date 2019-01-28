@@ -1333,5 +1333,62 @@
         "bs": "target end-to-end models"
       }
     }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Geography",
+      "description": ""
+    },
+    {
+      "id": 1,
+      "text": "Adventure",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "text": "Science",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "text": "Technology",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "text": "Fiction",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "text": "History",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "text": "Biography",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "text": "Children",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "text": "Romance",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "text": "War",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "text": "Fanatacy",
+      "description": ""
+    }
   ]
 }
