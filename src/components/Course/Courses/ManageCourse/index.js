@@ -25,7 +25,7 @@ class ManageCourses extends Component {
     handleChange(event) {
         let field = event.target.name;
         let value = event.target.value;
-        let course = this.state.course;
+        let course = Object.assign({}, this.state.course);
         course[field] = value;
         this.setState({course});
     };
