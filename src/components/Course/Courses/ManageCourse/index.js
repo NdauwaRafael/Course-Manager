@@ -45,7 +45,7 @@ class ManageCourses extends Component {
     };
 
     render() {
-        // const {allAuthors} = this.props;
+        const {authors} = this.props;
         const {course, errors} = this.state;
         return (
                 <div className="max-w-lg w-full">
@@ -62,7 +62,7 @@ class ManageCourses extends Component {
                             </p>
                             <AddCourse onChange={this.handleChange}
                                        course={course}
-                                       allAuthors={[]}
+                                       allAuthors={authors}
                                        onSave={this.onSave}
                                        errors={errors}/>
                         </div>
@@ -72,13 +72,22 @@ class ManageCourses extends Component {
     }
 }
 ManageCourses.propTypes = {
-    // course: PropTypes.array.isRequired,
+    // course: PropTypes.object.isRequired,
+    authors: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
 };
 const mapStateToProps = (state, ownProps)=> {
-    let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''}
+    let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''};
+
+    const authorFormattedForDropdown = state.authors.map(author=>{
+        return {
+            value: author.id,
+            text: author.name
+        };
+    });
     return {
-        course: course
+        course: course,
+        authors: authorFormattedForDropdown
     }
 };
 const mapDispatchToProps = (dispatch)=> {
