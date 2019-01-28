@@ -44,14 +44,14 @@ class ManageCourses extends Component {
     };
 
     render() {
-        const {allAuthors} = this.props;
+        // const {allAuthors} = this.props;
         const {course, errors} = this.state;
         return (
                 <div className="max-w-md w-full">
                     <div
                         className="border-r border-b border-l border-grey-light lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
-                            <p className="text-sm text-grey-dark flex items-center">
+                            <p className="text-sm text-grey-dark flex items-center mb-8">
                                 <svg className="fill-current text-grey w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 20 20">
                                     <path
