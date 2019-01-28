@@ -4,7 +4,7 @@
 let getAllCourses =  async function () {
     return await (await (await (fetch('http://localhost:3004/courses')))).json();
 };
-let createCourse = function (course) {
+let saveCourse = function (course) {
     let options = {
         method: 'POST',
         headers: {
@@ -18,5 +18,5 @@ let createCourse = function (course) {
 
 export default {
     getAllCourses,
-    createCourse
+    saveCourse
 }
