@@ -14,12 +14,8 @@ class ManageCourses extends Component {
         super(props, context);
 
         this.state = {
-            course: {
-                title: '',
-                category: '',
-                author: '',
-                description: ''
-            }
+            course: Object.assign({}, this.props.course),
+            errors: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -48,8 +44,8 @@ class ManageCourses extends Component {
     };
 
     render() {
-        const {allAuthors, errors} = this.props;
-        const {course} = this.state;
+        const {allAuthors} = this.props;
+        const {course, errors} = this.state;
         return (
             <div>
                 <h1>
@@ -69,8 +65,9 @@ ManageCourses.propTypes = {
     actions: PropTypes.object.isRequired
 };
 const mapStateToProps = (state, ownProps)=> {
+    let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''}
     return {
-        course: state.course
+        course: course
     }
 };
 const mapDispatchToProps = (dispatch)=> {
