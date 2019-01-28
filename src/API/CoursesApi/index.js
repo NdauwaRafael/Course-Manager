@@ -3,10 +3,12 @@
  */
 let getAllCourses =  async function () {
     return await (await (await (fetch('http://localhost:3004/courses')))).json();
-   // return fetch('http://localhost:3004/courses')
 };
+let createCourse = function (course) {
 
+}
 
 export default {
-    getAllCourses
+    getAllCourses,
+    createCourse
 }
