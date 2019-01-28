@@ -28,5 +28,22 @@ export function loadCourses() {
             })
     }
 }
+export function loadCategoriesSuccess(categories) {
+    return {
+        type: types.LOAD_CATEGORY_SUCCESS,
+        categories
+    }
+}
+
+export function loadCategories() {
+    return function (dispatch) {
+        return courseAPI.getAllCategories()
+            .then(categories=>{
+                dispatch(loadCategoriesSuccess(categories))
+            }, error=>{
+
+            })
+    }
+}
 
 
