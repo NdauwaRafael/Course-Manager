@@ -1,9 +1,10 @@
 /**
  * Created by Raphael Karanja on 2019-01-28.
  */
-import * as types from '../../actions/ActionTypes'
+import * as types from '../../actions/ActionTypes';
+import initialState from '../InitialState'
 
-export default (state = [], action) => {
+export default (state = initialState.authors, action) => {
     switch (action.type) {
         case types.CREATE_AUTHOR:
             return [
