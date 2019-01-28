@@ -1342,52 +1342,52 @@
     },
     {
       "id": 1,
-      "text": "Adventure",
+      "name": "Adventure",
       "description": ""
     },
     {
       "id": 2,
-      "text": "Science",
+      "name": "Science",
       "description": ""
     },
     {
       "id": 3,
-      "text": "Technology",
+      "name": "Technology",
       "description": ""
     },
     {
       "id": 4,
-      "text": "Fiction",
+      "name": "Fiction",
       "description": ""
     },
     {
       "id": 5,
-      "text": "History",
+      "name": "History",
       "description": ""
     },
     {
       "id": 6,
-      "text": "Biography",
+      "name": "Biography",
       "description": ""
     },
     {
       "id": 7,
-      "text": "Children",
+      "name": "Children",
       "description": ""
     },
     {
       "id": 8,
-      "text": "Romance",
+      "name": "Romance",
       "description": ""
     },
     {
-      "id": 8,
-      "text": "War",
+      "id": 9,
+      "name": "War",
       "description": ""
     },
     {
-      "id": 8,
-      "text": "Fanatacy",
+      "id": 10,
+      "name": "Fantasy",
       "description": ""
     }
   ]

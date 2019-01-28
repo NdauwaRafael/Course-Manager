@@ -4,7 +4,7 @@
 import {combineReducers} from 'redux';
 import courses from './CourseReducer';
 import authors from './AuthorReducer';
-import categories from './CourseReducer'
+import categories from './CategoriesReducer'
 
 const rootReducer = combineReducers({
     courses,
