@@ -27,7 +27,7 @@ class ManageCourses extends Component {
         let value = event.target.value;
         let course = Object.assign({}, this.state.course);
         course[field] = value;
-       return this.setState({course});
+        return this.setState({course});
     };
 
     onSave(e) {
@@ -40,6 +40,7 @@ class ManageCourses extends Component {
             },
             submitCallback: () => {
                 this.props.actions.createCourse(course);
+                this.props.history.push('/courses')
             }
         })
     };
@@ -79,6 +80,8 @@ ManageCourses.propTypes = {
     categories: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
 };
+
+
 const mapStateToProps = (state, ownProps) => {
     let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''};
 

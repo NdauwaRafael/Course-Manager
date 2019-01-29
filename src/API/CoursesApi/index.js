@@ -12,7 +12,7 @@ let saveCourse = async function (course) {
         },
         body: JSON.stringify(course)
     };
-    return await (await (await (fetch('http://localhost:3004/courses', options)))).json();
+    return await (await (await (fetch('http://localhost:3004/courses/authors', options)))).json();
 };
 
 export default {
