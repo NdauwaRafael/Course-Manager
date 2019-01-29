@@ -27,7 +27,7 @@ class ManageCourses extends Component {
         let value = event.target.value;
         let course = Object.assign({}, this.state.course);
         course[field] = value;
-        this.setState({course});
+       return this.setState({course});
     };
 
     onSave(e) {

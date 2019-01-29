@@ -4,7 +4,7 @@
 let getAllCourses =  async function () {
     return await (await (await (fetch('http://localhost:3004/courses')))).json();
 };
-let saveCourse = function (course) {
+let saveCourse = async function (course) {
     let options = {
         method: 'POST',
         headers: {
@@ -12,9 +12,8 @@ let saveCourse = function (course) {
         },
         body: JSON.stringify(course)
     };
-
-    return fetch('http://localhost:3004/courses', options);
-}
+    return await (await (await (fetch('http://localhost:3004/courses', options)))).json();
+};
 
 export default {
     getAllCourses,
