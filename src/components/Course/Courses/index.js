@@ -6,20 +6,31 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
 import {bindActionCreators} from "redux";
-import CourseList from './CourseList'
+import CourseList from './CourseList';
 
 class CoursesPage extends Component {
+
     constructor(props, context) {
         super(props);
+        this.createCoursePage = this.createCoursePage.bind(this);
     };
 
+
+    createCoursePage(){
+        this.props.history.push('/course')
+    }
 
     render() {
         const {courses} = this.props;
         return (
             <div>
-                <div className="text-grey-dark flex items-center mb-5">
-                    Courses
+                <div className="text-grey-dark flex items-center mb-5  justify-between">
+                    <div className="">Courses</div>
+                    <div className="">
+                        <button className="bg-teal text-white font-bold py-2 px-4 rounded" onClick={this.createCoursePage}>
+                            Add Course
+                        </button>
+                    </div>
                 </div>
                 <div className="mb-5">
                     <CourseList courses={courses}/>
@@ -33,6 +44,8 @@ CoursesPage.propTypes = {
     courses: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
 };
+
+
 const mapStateToProps = (state, ownProps) => {
     return {
         courses: state.courses
