@@ -84,6 +84,10 @@ ManageCourses.propTypes = {
 
 const mapStateToProps = (state, ownProps) => {
     let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''};
+    let courseId = ownProps.params.id;
+    if(courseId){
+        
+    }
 
     const authorFormattedForDropdown = state.authors.map(author => {
         return {
