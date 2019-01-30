@@ -82,7 +82,7 @@ ManageCourses.propTypes = {
 };
 
 const getCourseById = (courses, id) => {
-    let course = courses.filter(course => course.id === id);
+    let course = courses.filter(course => parseInt(course.id) === parseInt(id));
     if (course.length > 0){
         return course[0]
     }
@@ -90,9 +90,8 @@ const getCourseById = (courses, id) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''};
-    let courseId = undefined;
-    console.log(ownProps.match.params.id)
+    let course = {id: '', watched: '', title: '', authorId: '', description: '', categoryId: ''};
+    let courseId = ownProps.match.params.id;
     if (courseId) {
         course = getCourseById(state.courses, courseId);
     }

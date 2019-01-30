@@ -2,72 +2,11 @@
   "courses": [
     {
       "id": 1,
-      "title": "What do they got in there? King Kong?",
-      "category": "awesomeness",
-      "description": "Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. Do you have any idea how long it takes those cups to decompose. Do you have any idea how long it takes those cups to decompose."
-    },
-    {
-      "id": 2,
       "watched": "",
       "title": "Things fall apart",
-      "authorId": "",
-      "description": "They're using our own satellites against us. And the clock is ticking. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Hey, take a look at the earthlings. Goodbye! Jaguar shark! So tell me - does it really exist?",
-      "category": "1",
-      "author": "1"
-    },
-    {
-      "id": 3,
-      "watched": "",
-      "title": "Once Upon A time",
-      "authorId": "",
-      "description": "Just my luck, no ice. Just my luck, no ice. I gave it a cold? I gave it a virus. A computer virus. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
-      "category": "2",
-      "author": "6"
-    },
-    {
-      "id": 4,
-      "watched": "",
-      "title": "The have and the nots",
-      "authorId": "",
-      "description": "This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You really think you can fly that thing? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window?",
-      "category": "7",
-      "author": "6"
-    },
-    {
-      "id": 5,
-      "watched": "",
-      "title": "When we get there",
-      "authorId": "",
-      "description": "What do they got in there? King Kong? Hey, take a look at the earthlings. Goodbye! Remind me to thank John for a lovely weekend. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?",
-      "category": "1",
-      "author": "4"
-    },
-    {
-      "id": 6,
-      "watched": "",
-      "title": "You're a very talented young man",
-      "authorId": "",
-      "description": "You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!\n\n",
-      "category": "4",
-      "author": "6"
-    },
-    {
-      "id": 7,
-      "watched": "",
-      "title": "Eventually, you do plan to have dinosaurs on your dinosaur tour, right? ",
-      "authorId": "",
-      "description": "Eventually, you do plan to have dinosaurs on your dinosaur tour, right? You know what? It is beets. I've crashed into a beet truck. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here!",
-      "category": "2",
-      "author": "3"
-    },
-    {
-      "id": 8,
-      "watched": "",
-      "title": "They're using our own satellites against us",
-      "authorId": "",
-      "description": "They're using our own satellites against us. And the clock is ticking. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Hey, take a look at the earthlings. Goodbye! Jaguar shark! So tell me - does it really exist?\n\n",
-      "category": "3",
-      "author": "1"
+      "authorId": "9",
+      "description": "Hey, take a look at the earthlings. Goodbye! You really think you can fly that thing? They're using our own satellites against us. And the clock is ticking. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!",
+      "categoryId": "1"
     }
   ],
   "authors": [

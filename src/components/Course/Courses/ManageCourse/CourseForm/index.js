@@ -18,8 +18,8 @@ const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors, cate
                     error={errors.title}/>
 
                 <SelectInput
-                    name="author"
-                    value={course.author}
+                    name="authorId"
+                    value={course.authorId}
                     label="Author"
                     defaultOption="Select Author"
                     options={allAuthors}
@@ -27,13 +27,13 @@ const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors, cate
                     error={errors.authorId}/>
 
                 <SelectInput
-                    name="category"
-                    value={course.category}
+                    name="categoryId"
+                    value={course.categoryId}
                     label="Category"
                     defaultOption="Select Category here"
                     options={categories}
                     onChange={onChange}
-                    error={errors.category}/>
+                    error={errors.categoryId}/>
 
                 <TextArea
                     name="description"
