@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Course/Authors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Authors/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="430">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="252">
+              <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="574">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
                 <element signature="e#53#78#0" expanded="true" />
               </folding>
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="288">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="e#53#78#0" expanded="true" />
               </folding>
@@ -176,9 +176,9 @@
         <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" />
       </list>
     </option>
   </component>
@@ -286,7 +286,7 @@
       <workItem from="1548665579192" duration="250000" />
       <workItem from="1548676654486" duration="1336000" />
       <workItem from="1548765377149" duration="2754000" />
-      <workItem from="1548820122796" duration="7398000" />
+      <workItem from="1548820122796" duration="7455000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -306,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51999000" />
+    <option name="totallyTimeSpent" value="52056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -694,33 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -743,11 +716,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="430">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
         </state>
       </provider>
     </entry>
