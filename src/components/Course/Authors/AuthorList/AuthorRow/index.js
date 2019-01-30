@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const AuthorRow = ({author}) => {
     return (
-    <div className="w-1/2 px-4 mb-4 " >
+    <div className="w-1/3 px-4 mb-4 " >
         <div className=" rounded overflow-hidden shadow-lg " key={author.id}>
             <img className="w-full" src={author.picture} alt="Sunset in the mountains" />
                 <div className="px-6 py-4">
