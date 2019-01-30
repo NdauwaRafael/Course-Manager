@@ -10,10 +10,12 @@ const AuthorList = ({authors}) => {
             <table className="w-full text-left table-collapse">
                 <thead>
                 <tr>
-                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Title</th>
-                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Category</th>
-                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Author</th>
-                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Action</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Image</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Name</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">UserName</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Email</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Phone</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Website</th>
                 </tr>
                 </thead>
                 <tbody className="align-baseline">

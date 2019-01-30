@@ -2,9 +2,11 @@
  * Created by Raphael Karanja on 2019-01-30.
  */
 import React, {Component} from 'react';
-import {bindActionCreators} from "redux";
+// import {bindActionCreators} from "redux";
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
+import CategoryList from './CategoriesList'
+
 
 class Courses extends Component {
     constructor(props, context) {
@@ -14,9 +16,10 @@ class Courses extends Component {
     };
 
     render() {
+        const {categories} = this.props
         return (
             <div>
-
+                <CategoryList categories={categories} />
             </div>
         );
     }
@@ -28,7 +31,7 @@ Courses.propTypes = {
 };
 const mapStateToProps = (state, ownProps) => {
     return {
-        courses: state.courses
+        categories: state.categories
     }
 };
 const mapDispatchToProps = (dispatch) => {

@@ -12,6 +12,7 @@ const AuthorRow = ({author}) => {
             <td>{author.username}</td>
             <td>{author.email}</td>
             <td>{author.phone}</td>
+            <td><a href={author.website}>{author.website}</a></td>
             <td>
                 <Link to={'/author/'+author.id}>
                     <button
