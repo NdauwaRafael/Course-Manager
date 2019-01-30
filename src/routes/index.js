@@ -12,8 +12,8 @@ export default (
     <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/course" component={ManageCourse} />
-        <Route path="/course/:id" component={ManageCourse} />
-        <Route path="/courses" component={CoursesPage} />
+        <Route path="/course" exact component={ManageCourse} />
+        <Route path="/course/:id" exact component={ManageCourse} />
+        <Route path="/courses" exact component={CoursesPage} />
     </Switch>
 )
