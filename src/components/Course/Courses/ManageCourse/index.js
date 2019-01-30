@@ -90,7 +90,7 @@ const getCourseById = (courses, id) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    let course = {id: '', watched: '', title: '', authorId: '', description: '', categoryId: ''};
+    let course = {id: '', watched: '', title: '', authorsId: '', description: '', categoriesId: ''};
     let courseId = ownProps.match.params.id;
     if (courseId) {
         course = getCourseById(state.courses, courseId);
