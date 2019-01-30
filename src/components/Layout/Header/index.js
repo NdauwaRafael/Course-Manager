@@ -40,12 +40,12 @@ export default props =>
                     Courses
                 </Link>
                 <Link
-                    to="/courses"
+                    to="/categories"
                    className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
                     Categories
                 </Link>
                 <Link
-                    to="/courses"
+                    to="/authors"
                    className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
                     Author
                 </Link>
