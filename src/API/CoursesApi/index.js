@@ -6,7 +6,7 @@ let getAllCourses =  async function () {
 };
 let saveCourse = async function (course) {
     let options = {
-        method: 'POST',
+        method: course.id ? 'PUT' : 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
