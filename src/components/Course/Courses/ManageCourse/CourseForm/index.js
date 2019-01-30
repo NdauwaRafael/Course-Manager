@@ -18,22 +18,22 @@ const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors, cate
                     error={errors.title}/>
 
                 <SelectInput
-                    name="authorsId"
-                    value={course.authorsId}
+                    name="authorId"
+                    value={course.authorId}
                     label="Author"
                     defaultOption="Select Author"
                     options={allAuthors}
                     onChange={onChange}
-                    error={errors.authorsId}/>
+                    error={errors.authorId}/>
 
                 <SelectInput
-                    name="categoriesId"
-                    value={course.categoriesId}
+                    name="categoryId"
+                    value={course.categoryId}
                     label="Category"
                     defaultOption="Select Category here"
                     options={categories}
                     onChange={onChange}
-                    error={errors.categoriesId}/>
+                    error={errors.categoryId}/>
 
                 <TextArea
                     name="description"

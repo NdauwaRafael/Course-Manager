@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export default  ({course})=>
     <tr key={course.id}>
         <td>{course.title}</td>
-        <td>{course.categories.name}</td>
+        <td>{course.category}</td>
         <td>
             <Link to={'/course/'+course.id}>
                 <button

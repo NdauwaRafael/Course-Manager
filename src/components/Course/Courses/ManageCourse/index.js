@@ -90,11 +90,14 @@ const getCourseById = (courses, id) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    let course = {id: '', watched: '', title: '', authorsId: '', description: '', categoriesId: ''};
+    let course = {id: '', watched: '', title: '', authorId: '', description: '', categoryId: ''};
     let courseId = ownProps.match.params.id;
-    if (courseId) {
+
+    if (courseId && state.courses.length > 0) {
         course = getCourseById(state.courses, courseId);
     }
+
+    console.log(course)
 
     const authorFormattedForDropdown = state.authors.map(author => {
         return {
