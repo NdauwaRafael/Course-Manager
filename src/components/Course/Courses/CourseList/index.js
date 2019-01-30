@@ -12,6 +12,7 @@ export default ({courses}) => {
                 <tr>
                     <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Title</th>
                     <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Category</th>
+                    <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Author</th>
                     <th className="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">Action</th>
                 </tr>
                 </thead>
