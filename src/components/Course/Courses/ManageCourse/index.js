@@ -22,6 +22,14 @@ class ManageCourses extends Component {
         this.onSave = this.onSave.bind(this);
     };
 
+    componentWillReceiveProps(nextProps, nextContext) {
+        if (this.props.course.id !== nextProps.course.id) {
+            this.setState({
+                course: Object.assign({}, nextProps.course)
+            })
+        }
+    }
+
     handleChange(event) {
         let field = event.target.name;
         let value = event.target.value;
@@ -97,7 +105,6 @@ const mapStateToProps = (state, ownProps) => {
         course = getCourseById(state.courses, courseId);
     }
 
-    console.log(course)
 
     const authorFormattedForDropdown = state.authors.map(author => {
         return {
