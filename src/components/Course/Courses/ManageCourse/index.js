@@ -81,12 +81,19 @@ ManageCourses.propTypes = {
     actions: PropTypes.object.isRequired
 };
 
+const getCourseById = (courses, id) => {
+    let course = courses.filter(course => course.id === id);
+    if (course.length > 0){
+        return course[0]
+    }
+    return null
+};
 
 const mapStateToProps = (state, ownProps) => {
     let course = {id: '', watched: '', title: '', authorId: '', description: '', category: ''};
     let courseId = ownProps.params.id;
-    if(courseId){
-        
+    if (courseId) {
+        course = getCourseById(state.courses, courseId);
     }
 
     const authorFormattedForDropdown = state.authors.map(author => {
