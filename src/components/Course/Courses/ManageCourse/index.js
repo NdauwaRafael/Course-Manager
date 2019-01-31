@@ -47,8 +47,14 @@ class ManageCourses extends Component {
                 alert({type: 3, text: 'Aw, why not? :(', time: 2})
             },
             submitCallback: () => {
-                this.props.actions.createCourse(course);
-                this.props.history.push('/courses')
+                this.props.actions.createCourse(course)
+                    .then(()=>{
+                        this.props.history.push('/courses')
+                    })
+                    .catch(()=>{
+                        alert({type: 3, text: 'Could not save :(', time: 2})
+                    })
+
             }
         })
     };

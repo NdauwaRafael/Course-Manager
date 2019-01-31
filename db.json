@@ -39,6 +39,14 @@
       "authorId": "2",
       "description": "some data",
       "categoryId": "2"
+    },
+    {
+      "id": 6,
+      "watched": "",
+      "title": "React in style",
+      "authorId": "2",
+      "description": "This is for more details. Fallback font will be used while loading",
+      "categoryId": "3"
     }
   ],
   "authors": [
