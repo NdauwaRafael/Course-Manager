@@ -8,7 +8,7 @@ const CategoriesList = ({categories}) => {
     return (
         <div className="flex mb-4 flex-wrap -mx-4" >
                 {
-                    categories.map(category=><CategoryChild  category={category} />)
+                    categories.map(category=><CategoryChild key={category.id}  category={category} />)
                 }
 
         </div>
