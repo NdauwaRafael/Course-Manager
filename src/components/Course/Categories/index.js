@@ -26,7 +26,7 @@ class Courses extends Component {
 }
 
 Courses.propTypes = {
-    courses: PropTypes.array.isRequired,
+    categories: PropTypes.array.isRequired,
     //actions: PropTypes.object.isRequired
 };
 const mapStateToProps = (state, ownProps) => {
