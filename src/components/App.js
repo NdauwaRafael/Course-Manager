@@ -1,7 +1,8 @@
 import React, { Component} from 'react';
 import Header from './Layout/Header';
 import Routes from '../routes';
-import Spinner from './Common/Loaders/Spinner'
+import Spinner from './Common/Loaders/Spinner';
+import {connect} from 'react-redux';
 class App extends Component {
   render() {
     return (
@@ -17,5 +18,9 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+const mapStateToProps = (state, ownProps)=>{
+    return {
+        loading: state.ajaxCallsInProgress > 0
+    }
+};
+export default connect( mapStateToProps)(App);
