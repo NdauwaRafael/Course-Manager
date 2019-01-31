@@ -2,7 +2,7 @@
  * Created by Raphael Karanja on 2019-01-30.
  */
 import React, {Component} from 'react';
-import {bindActionCreators} from "redux";
+// import {bindActionCreators} from "redux";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import AuthorList from './AuthorList'

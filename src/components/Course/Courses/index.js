@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
 import {bindActionCreators} from "redux";
 import CourseList from './CourseList';
-import Spinner from '../../Common/Loaders/Spinner'
+// import Spinner from '../../Common/Loaders/Spinner';
 
 class CoursesPage extends Component {
 

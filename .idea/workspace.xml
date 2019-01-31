@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Authors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Authors/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="360">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -56,6 +58,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CourseAppStore/reducers/InitialState/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -157,24 +168,24 @@
         <option value="$PROJECT_DIR$/src/components/Course/Courses/CourseList/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoryList/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Authors/index.js" />
         <option value="$PROJECT_DIR$/src/routes/index.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Header/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/Author/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/index.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/configureSore/index.js" />
         <option value="$PROJECT_DIR$/src/assets/css/index.css" />
         <option value="$PROJECT_DIR$/src/components/Common/Loaders/Spinner/index.js" />
         <option value="$PROJECT_DIR$/src/assets/css/spinners.css" />
-        <option value="$PROJECT_DIR$/src/components/Course/Courses/index.js" />
         <option value="$PROJECT_DIR$/src/assets/css/file.scss" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/actions/ActionTypes/index.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/actions/AjaxStatusActions/index.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/InitialState/index.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Courses/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Authors/index.js" />
       </list>
     </option>
   </component>
@@ -204,6 +215,27 @@
               <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic_redux" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
+              <item name="Authors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
@@ -289,7 +321,7 @@
       <workItem from="1548820122796" duration="9387000" />
       <workItem from="1548850409147" duration="1311000" />
       <workItem from="1548911735762" duration="1337000" />
-      <workItem from="1548925344985" duration="2812000" />
+      <workItem from="1548925344985" duration="2877000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -309,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59448000" />
+    <option name="totallyTimeSpent" value="59513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -540,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -649,26 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="895">
@@ -702,27 +704,10 @@
     <entry file="file://$PROJECT_DIR$/src/assets/fonts/fontAwesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/spinners.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2757">
           <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/file.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -740,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CourseAppStore/reducers/InitialState/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -754,6 +732,54 @@
           <folding>
             <element signature="e#53#104#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#53#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CourseAppStore/reducers/InitialState/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/file.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
