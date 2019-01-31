@@ -11,7 +11,7 @@ const AuthorRow = ({author}) => {
             <img className="w-full" src={author.picture} alt="Sunset in the mountains" />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{author.name}</div>
-                    <p className="text-grey-darker text-base">
+                    <div className="text-grey-darker text-base">
                         <div className="flex items-center mb-2">
                                 <div className="text-sm">
                                     <p className="text-black leading-none">Name</p>
@@ -31,7 +31,7 @@ const AuthorRow = ({author}) => {
                                     <p className="text-grey-dark">{author.phone}</p>
                                 </div>
                         </div>
-                    </p>
+                    </div>
                 </div>
                 <div className="px-6 py-4">
                     <span

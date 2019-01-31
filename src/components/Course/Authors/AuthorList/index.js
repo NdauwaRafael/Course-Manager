@@ -8,7 +8,7 @@ const AuthorList = ({authors}) => {
     return (
         <div className="flex mb-4 flex-wrap -mx-4">
             {
-                authors.map(author=><AuthorRow  author={author} />)
+                authors.map(author=><AuthorRow key={author.id} author={author} />)
             }
         </div>
     )
