@@ -15,7 +15,8 @@ class ManageCourses extends Component {
 
         this.state = {
             course: Object.assign({}, this.props.course),
-            errors: ''
+            errors: '',
+            saving: false
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -47,12 +48,16 @@ class ManageCourses extends Component {
                 alert({type: 3, text: 'Aw, why not? :(', time: 2})
             },
             submitCallback: () => {
+                this.setState({saving: true});
                 this.props.actions.createCourse(course)
                     .then(()=>{
-                        this.props.history.push('/courses')
+                        this.props.history.push('/courses');
+                        this.setState({saving: false});
+                        alert({type: 'success', text: 'Success, Course was added successfully :)', time: 2})
                     })
                     .catch(()=>{
-                        alert({type: 3, text: 'Could not save :(', time: 2})
+                        alert({type: 3, text: 'Could not save :(', time: 2});
+                        this.setState({saving: false});
                     })
 
             }
@@ -61,7 +66,7 @@ class ManageCourses extends Component {
 
     render() {
         const {authors, categories} = this.props;
-        const {course, errors} = this.state;
+        const {course, errors, saving} = this.state;
         return (
             <div className="max-w-lg w-full">
                 <div
@@ -79,6 +84,7 @@ class ManageCourses extends Component {
                                    course={course}
                                    allAuthors={authors}
                                    categories={categories}
+                                   loading={saving}
                                    onSave={this.onSave}
                                    errors={errors}/>
                     </div>
