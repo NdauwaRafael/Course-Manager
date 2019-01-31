@@ -13,6 +13,7 @@ $notie-color-neutral: #A0A0A0;
 @import '~tailwindcss/dist/tailwind.min.css';
 @import '~notie/dist/notie.min.css';
 @import '~izitoast/dist/css/iziToast.min.css';
+@import "spinners.css";
 
 .notie-container {
   box-shadow: none;
