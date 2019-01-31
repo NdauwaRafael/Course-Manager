@@ -5,7 +5,7 @@ import React from 'react'
 
 const CategoryChild = ({category}) => {
     return (
-        <div className="w-1/3 px-4 mb-4">
+        <div className="w-1/3 px-4 mb-4" key={category.id}>
             <div className="max-w-sm rounded overflow-hidden shadow-lg" key={category.id}>
                 <img className="w-full" src="https://via.placeholder.com/468x60?text=Course+Categories"
                      alt="Sunset in the mountains"/>

@@ -6,7 +6,7 @@ import CategoryChild from "./CategoryChild";
 
 const CategoriesList = ({categories}) => {
     return (
-        <div className="flex mb-4 flex-wrap -mx-4">
+        <div className="flex mb-4 flex-wrap -mx-4" >
                 {
                     categories.map(category=><CategoryChild  category={category} />)
                 }
