@@ -7,6 +7,7 @@ import {connect} from 'react-redux';
 import * as courseActions from '../../../CourseAppStore/actions/CourseActions';
 import {bindActionCreators} from "redux";
 import CourseList from './CourseList';
+import Spinner from '../../Common/Loaders/Spinner'
 
 class CoursesPage extends Component {
 
@@ -30,6 +31,7 @@ class CoursesPage extends Component {
                         <button className="bg-teal text-white font-bold py-2 px-4 rounded" onClick={this.createCoursePage}>
                             Add Course
                         </button>
+                        <Spinner />
                     </div>
                 </div>
                 <div className="mb-5">
