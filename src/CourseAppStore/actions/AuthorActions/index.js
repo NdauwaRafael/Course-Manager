@@ -3,6 +3,7 @@
  */
 import * as types from '../ActionTypes'
 import authorAPI from '../../../API/AuthorApi';
+import {beginAjaxCall} from '../AjaxStatusActions';
 
 export function loadAuthorsSuccess(authors) {
     return {
@@ -13,6 +14,7 @@ export function loadAuthorsSuccess(authors) {
 
 export function loadAuthors() {
     return function (dispatch) {
+        dispatch(beginAjaxCall());
         return authorAPI.getAllAuthors()
             .then(authors => {
                 dispatch(loadAuthorsSuccess(authors))

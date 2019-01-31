@@ -3,6 +3,8 @@
  */
 import * as types from '../ActionTypes'
 import courseAPI from '../../../API/CoursesApi';
+import {beginAjaxCall} from '../AjaxStatusActions';
+
 
 export function loadCoursesSuccess(courses) {
     return {
@@ -13,6 +15,7 @@ export function loadCoursesSuccess(courses) {
 
 export function loadCourses() {
     return function (dispatch) {
+        dispatch(beginAjaxCall());
         return courseAPI.getAllCourses()
             .then(courses => {
                 dispatch(loadCoursesSuccess(courses))
@@ -38,6 +41,7 @@ export function updateCoursesSuccess(course) {
 
 export function createCourse(course) {
     return function (dispatch) {
+        dispatch(beginAjaxCall());
         if (course.id) {
             return courseAPI.updateCourse(course)
                 .then(updatedCourse => {
