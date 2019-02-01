@@ -6,6 +6,7 @@ import {Route, Switch} from 'react-router-dom';
 import HomePage from '../components/Home';
 import AboutPage from '../components/About';
 import CoursesPage from '../components/Course/Courses';
+import ViewCoursePage from '../components/Course/Courses/ViewCourse'
 import ManageCourse from '../components/Course/Courses/ManageCourse';
 import CategoriesPage from '../components/Course/Categories'
 import AuthorsPage from '../components/Course/Authors'
@@ -15,7 +16,7 @@ export default (
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/course" exact component={ManageCourse} />
-        <Route path="/course/:id" exact component={ManageCourse} />
+        <Route path="/course/:id" exact component={ViewCoursePage} />
         <Route path="/course/edit/:id" exact component={ManageCourse} />
         <Route path="/courses" exact component={CoursesPage} />
         <Route path="/categories" exact component={CategoriesPage} />
