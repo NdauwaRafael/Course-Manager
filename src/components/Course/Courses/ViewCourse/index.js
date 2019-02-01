@@ -3,11 +3,15 @@
  */
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
+import TextInput from "../../../Common/Form/Input";
 
 class ViewCourse extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            comment: {}
+        }
+        this.handleChange = this.handleChange.bind(this);
     };
 
     componentWillReceiveProps(nextProps, nextContext) {
@@ -18,6 +22,13 @@ class ViewCourse extends Component {
         }
     }
 
+    handleChange(event){
+        let field = event.target.name;
+        let value = event.target.value;
+        let comment = Object.assign({}, this.state.comment);
+        comment[field] = value;
+        return this.setState({comment});
+    }
     render() {
         const {course} = this.props;
         const {author, category} = course;
@@ -72,8 +83,15 @@ class ViewCourse extends Component {
                                 Leave a comment
                             </span>
                             </p>
-                                <div>
-
+                                <div className="w-full max-w-md">
+                                    <form className="w-full max-w-lg">
+                                        <TextInput
+                                            name="title"
+                                            value={''}
+                                            label="Title"
+                                            onChange={()=>{}}
+                                            error={{}}/>
+                                    </form>
                                 </div>
                         </div>
                     </div>
