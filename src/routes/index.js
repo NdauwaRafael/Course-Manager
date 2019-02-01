@@ -16,6 +16,7 @@ export default (
         <Route path="/about" component={AboutPage} />
         <Route path="/course" exact component={ManageCourse} />
         <Route path="/course/:id" exact component={ManageCourse} />
+        <Route path="/course/edit/:id" exact component={ManageCourse} />
         <Route path="/courses" exact component={CoursesPage} />
         <Route path="/categories" exact component={CategoriesPage} />
         <Route path="/authors" exact component={AuthorsPage} />

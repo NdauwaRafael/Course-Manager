@@ -15,7 +15,7 @@ export default  ({course})=>
                 <Link to={'/course/'+course.id} className="bg-transparent hover:bg-green text-green-dark hover:text-green-lightest font-bold py-2 px-4 rounded">
                     Show
                 </Link>
-                <Link to={'/course/'+course.id} className="bg-transparent hover:bg-blue text-blue-light hover:text-blue-lightest font-bold py-2 px-4 rounded">
+                <Link to={'/course/edit/'+course.id} className="bg-transparent hover:bg-blue text-blue-light hover:text-blue-lightest font-bold py-2 px-4 rounded">
                     Edit
                 </Link>
                 <Link to={'/course/'+course.id} className="bg-transparent hover:bg-red text-red-light hover:text-red-lightest font-bold py-2 px-4 rounded">
