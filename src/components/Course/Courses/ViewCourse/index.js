@@ -37,7 +37,7 @@ class ViewCourse extends Component {
         let {comment} = this.state;
         comment.courseId = this.props.course.id;
 
-        console.log(comment, 'comment')
+
     }
     render() {
         const {course} = this.props;

@@ -23,7 +23,7 @@ const CommentForm = ({onSave, comment, onChange, error}) => {
                     <div className="w-full max-w-lg">
                         <form className="w-full">
                                         <TextArea
-                                            label=''
+                                            label=' '
                                             name="comment"
                                             value={comment.comment}
                                             onChange={onChange}
