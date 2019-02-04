@@ -5,5 +5,6 @@ export default {
     authors: [],
     courses: [],
     categories: [],
+    comments: [],
     ajaxCallsInProgress: 0
 }
