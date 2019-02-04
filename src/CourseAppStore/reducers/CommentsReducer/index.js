@@ -13,7 +13,6 @@ export default (state = initialState.comments, action) => {
                 Object.assign({}, action.comment)
             ];
         case types.LOAD_COMMENT_SUCCESS:
-            console.log(action.comments, 'action.comments')
             return action.comments;
         default:
             return state;

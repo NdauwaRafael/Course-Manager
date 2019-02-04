@@ -7,7 +7,7 @@ export default ({comments})=>{
     return (
         <div>
             {
-                // comments.map(comment=><CommentRow key={comment.id} comment={comment}/>)
+                comments.map(comment=><CommentRow key={comment.id} comment={comment}/>)
             }
         </div>
     )

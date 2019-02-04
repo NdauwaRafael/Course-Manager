@@ -142,11 +142,10 @@ const getCourseById = (courses, id) => {
     return null
 };
 const getCommentsByCourseId = (comments, id) => {
-    console.log(comments, 'comments')
-    // let mycomments = comments.filter(comment => parseInt(comment.id) === parseInt(id));
-    // if(mycomments.length > 0){
-    //     return mycomments;
-    // }
+    let mycomments = comments.filter(comment => parseInt(comment.courseId) === parseInt(id));
+    if(mycomments.length > 0){
+        return mycomments;
+    }
     return [];
 }
 
