@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/CommentApi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/CommentApi/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+            <state relative-caret-position="590">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -43,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="417">
               <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#53#101#0" expanded="true" />
@@ -147,9 +144,9 @@
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ManageCourse/CourseForm/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" />
         <option value="$PROJECT_DIR$/src/API/CommentApi/index.js" />
-        <option value="$PROJECT_DIR$/db.json" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/db.json" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
       </list>
     </option>
@@ -289,7 +286,7 @@
       <workItem from="1548925344985" duration="7995000" />
       <workItem from="1549003660300" duration="3222000" />
       <workItem from="1549266560127" duration="2731000" />
-      <workItem from="1549282215472" duration="3655000" />
+      <workItem from="1549282215472" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -309,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74239000" />
+    <option name="totallyTimeSpent" value="74531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -701,23 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/API/CommentApi/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#53#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/Form/Input/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
@@ -752,6 +732,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/API/CommentApi/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CourseAppStore/actions/CommentActions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#53#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -764,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        <state relative-caret-position="590">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>

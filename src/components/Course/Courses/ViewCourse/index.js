@@ -67,6 +67,7 @@ class ViewCourse extends Component {
         }
         let {comment} = this.state;
         comment.courseId = this.props.course.id;
+        comment.created_at = new Date();
         this.props.actions.createComment(comment)
             .then(() => {
                 alert({type: 'success', text: 'Success, Comment was added successfully :)', time: 2});
