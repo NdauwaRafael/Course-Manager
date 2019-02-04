@@ -7,9 +7,7 @@ import CommentForm from './Comment/CommentForm';
 import {bindActionCreators} from "redux";
 import * as commentActions from "../../../../CourseAppStore/actions/CommentActions";
 import {alert} from "notie";
-import {loadComments} from "../../../../CourseAppStore/actions/CommentActions";
-import configureStore from "../../../../CourseAppStore/configureSore";
-
+import CommentList from './Comment/CommentList'
 
 
 class ViewCourse extends Component {
@@ -25,10 +23,10 @@ class ViewCourse extends Component {
         this.onSave = this.onSave.bind(this);
     };
 
-    componentWillMount() {
-        const store = configureStore();
-        store.dispatch(loadComments(this.props.match.params.id));
-    }
+    // componentWillMount() {
+    //     const store = configureStore();
+    //     store.dispatch(loadComments(this.props.match.params.id));
+    // }
 
     componentWillReceiveProps(nextProps, nextContext) {
         if (this.props.course.id !== nextProps.course.id) {
@@ -82,7 +80,7 @@ class ViewCourse extends Component {
 
 
     render() {
-        const {course} = this.props;
+        const {course, comments} = this.props;
         const {author, category} = course;
         const {comment, errors} = this.state;
         return (
@@ -129,6 +127,8 @@ class ViewCourse extends Component {
                     onSave={this.onSave}
                 />
 
+                <CommentList comments={comments}/>
+
             </div>
         );
     }
@@ -141,19 +141,30 @@ const getCourseById = (courses, id) => {
     }
     return null
 };
+const getCommentsByCourseId = (comments, id) => {
+    console.log(comments, 'comments')
+    // let mycomments = comments.filter(comment => parseInt(comment.id) === parseInt(id));
+    // if(mycomments.length > 0){
+    //     return mycomments;
+    // }
+    return [];
+}
 
 const mapStateToProps = (state, ownProps) => {
     let course = {
         author: {},
         category: {}
     };
+    let comments = [];
     let courseId = ownProps.match.params.id;
 
     if (courseId && state.courses.length > 0) {
         course = getCourseById(state.courses, courseId);
+        comments = getCommentsByCourseId(state.comments, courseId);
     }
     return {
-        course: course
+        course: course,
+        comments: comments
     }
 };
 

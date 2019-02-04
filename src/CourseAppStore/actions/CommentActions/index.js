@@ -35,10 +35,10 @@ export function createComment(comment) {
 
 };
 
-export function loadComments(id) {
+export function loadComments() {
     return function (dispatch) {
         dispatch(beginAjaxCall());
-        return commentApi.loadCourseComments(id)
+        return commentApi.loadCourseComments()
             .then(comments => {
                 dispatch(loadCommentsSuccess(comments))
             })

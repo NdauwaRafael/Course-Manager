@@ -5,12 +5,14 @@ import {combineReducers} from 'redux';
 import courses from './CourseReducer';
 import authors from './AuthorReducer';
 import categories from './CategoriesReducer';
+import comments from './CommentsReducer';
 import ajaxStatusReducer from './AjaxStatusReducer'
 
 const rootReducer = combineReducers({
     courses,
     authors,
     categories,
+    comments,
     ajaxStatusReducer
 });
 

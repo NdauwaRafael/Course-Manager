@@ -1,6 +1,8 @@
 /**
  * Created by Raphael Karanja on 2019-02-04.
  */
+import React from 'react';
+
 export default ({comment})=>{
     return (
         <div>
