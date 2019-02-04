@@ -3,13 +3,14 @@
  */
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import TextInput from "../../../Common/Form/Input";
+import TextArea from "../../../Common/Form/Textarea";
 
 class ViewCourse extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            comment: {}
+            comment: {},
+            error: {}
         }
         this.handleChange = this.handleChange.bind(this);
     };
@@ -29,9 +30,14 @@ class ViewCourse extends Component {
         comment[field] = value;
         return this.setState({comment});
     }
+
+    onSave(){
+
+    }
     render() {
         const {course} = this.props;
         const {author, category} = course;
+        const {comment, error} = this.state;
         return (
             <div>
             <div className="w-full lg:flex">
@@ -71,7 +77,7 @@ class ViewCourse extends Component {
 
                 <div className="w-full lg:flex">
                     <div
-                        className="border-r border-b border-l border-grey-light lg:border-l lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                        className="w-full max-w-lg border-r border-b border-l border-grey-light lg:border-l lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
                             <p className="text-sm text-grey-dark flex items-center">
                                 <svg className="fill-current text-grey w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg"
@@ -83,14 +89,21 @@ class ViewCourse extends Component {
                                 Leave a comment
                             </span>
                             </p>
-                                <div className="w-full max-w-md">
-                                    <form className="w-full max-w-lg">
-                                        <TextInput
-                                            name="title"
-                                            value={''}
-                                            label="Title"
-                                            onChange={()=>{}}
-                                            error={{}}/>
+                                <div className="w-full max-w-lg">
+                                    <form className="w-full">
+                                        <TextArea
+                                            name="comment"
+                                            value={comment.comment}
+                                            label="Comment"
+                                            onChange={this.handleChange}
+                                            error={error.comment}/>
+
+                                        <button
+                                            className="flex-no-shrink bg-teal hover:bg-teal-dark border-teal hover:border-teal-dark text-sm border-4 text-white py-1 px-2 rounded"
+                                            type="submit"
+                                            onClick={this.onSave}>
+                                            Save
+                                        </button>
                                     </form>
                                 </div>
                         </div>

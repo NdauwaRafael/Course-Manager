@@ -8,7 +8,7 @@ class Textarea extends Component {
 
 
     render() {
-        const {name, value, label, error, onChange} = this.props;
+        const {name, value, label, error, onChange, rows} = this.props;
         let validatorClass = '';
         if (error.length > 0) {
             validatorClass = 'border-red'
@@ -17,10 +17,11 @@ class Textarea extends Component {
         }
 
         return (
-            <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="flex flex-wrap -mx-3">
                 <div className="w-full px-3">
                     <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor={name}>{label}</label>
                     <textarea value={value}
+                              rows={rows}
                               id={name}
                               name={name}
                               onChange={onChange}
