@@ -32,8 +32,12 @@ class ViewCourse extends Component {
         return this.setState({comment});
     }
 
-    onSave(){
+    onSave(e){
+        e.preventDefault();
+        let {comment} = this.state;
+        comment.courseId = this.props.course.id;
 
+        console.log(comment, 'comment')
     }
     render() {
         const {course} = this.props;
