@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="616">
               <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
               <folding>
                 <element signature="e#53#79#0" expanded="true" />
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            <state relative-caret-position="264">
+              <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -74,17 +74,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="36">
+              <caret line="1" column="44" selection-start-line="24" selection-end-line="28" />
               <folding>
                 <element signature="e#53#78#0" expanded="true" />
-                <element signature="e#240#2363#0" />
-                <element signature="e#1324#2282#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/palm-tree.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -116,9 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/About/index.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/normalize.css" />
-        <option value="$PROJECT_DIR$/config/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/CourseReduces/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ManageCourses/index.js" />
@@ -166,6 +175,9 @@
         <option value="$PROJECT_DIR$/src/components/Course/Courses/index.js" />
         <option value="$PROJECT_DIR$/src/components/Common/Form/Textarea/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" />
+        <option value="$USER_HOME$/Downloads/oasis.svg" />
+        <option value="$USER_HOME$/Downloads/palm-tree (1).svg" />
+        <option value="$USER_HOME$/Downloads/palm-tree.svg" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
       </list>
     </option>
@@ -291,7 +303,7 @@
       <workItem from="1548911735762" duration="1337000" />
       <workItem from="1548925344985" duration="7995000" />
       <workItem from="1549003660300" duration="3222000" />
-      <workItem from="1549266560127" duration="1008000" />
+      <workItem from="1549266560127" duration="2229000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -311,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68861000" />
+    <option name="totallyTimeSpent" value="70082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -370,27 +382,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="CONFIG: Export Route files as a JSX object" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/notie/dist/notie.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ManageCourses/File101.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Form/Input/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="e#54#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/Form/Select/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -691,26 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding>
-            <element signature="e#53#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ManageCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -741,22 +712,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/oasis.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/palm-tree (1).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="36">
+          <caret line="1" column="44" selection-start-line="24" selection-end-line="28" />
           <folding>
             <element signature="e#53#78#0" expanded="true" />
-            <element signature="e#240#2363#0" />
-            <element signature="e#1324#2282#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/palm-tree.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="e#53#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ManageCourse/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#53#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="264">
+          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>
