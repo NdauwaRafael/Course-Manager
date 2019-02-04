@@ -4,6 +4,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import CommentForm from './Comment/CommentForm';
+import {bindActionCreators} from "redux";
+import * as commentActions from "../../../../CourseAppStore/actions/CommentActions";
+import {alert} from "notie";
 
 class ViewCourse extends Component {
     constructor(props) {
@@ -36,8 +39,13 @@ class ViewCourse extends Component {
         e.preventDefault();
         let {comment} = this.state;
         comment.courseId = this.props.course.id;
-
-
+        this.props.actions.createComment(comment)
+            .then(()=>{
+                alert({type: 'success', text: 'Success, Comment was added successfully :)', time: 2})
+            })
+            .catch(()=>{
+                alert({type: 3, text: 'Oops!!, An Error occurred while adding comment :(', time: 2})
+            })
     }
     render() {
         const {course} = this.props;
@@ -114,6 +122,13 @@ const mapStateToProps = (state, ownProps) => {
     }
 };
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators(commentActions, dispatch)
+    }
+};
+
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(ViewCourse)
