@@ -6,7 +6,7 @@ import App from './components/App';
 import {Provider} from 'react-redux';
 import {loadCourses} from './CourseAppStore/actions/CourseActions'
 import {loadAuthors} from './CourseAppStore/actions/AuthorActions'
-import {loadCategories} from './CourseAppStore/actions/CategoryActions'
+import {loadCategories} from './CourseAppStore/actions/CategoryActions';
 import configureStore from './CourseAppStore/configureSore';
 
 const store = configureStore();
@@ -14,6 +14,7 @@ const store = configureStore();
 store.dispatch(loadCourses());
 store.dispatch(loadAuthors());
 store.dispatch(loadCategories());
+
 
 render(
     <Provider store={store}>

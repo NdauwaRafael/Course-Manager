@@ -1431,5 +1431,12 @@
       "name": "Fantasy",
       "description": ""
     }
+  ],
+  "comments": [
+    {
+      "comment": "Without no doubt, one of the best course ever.",
+      "courseId": 2,
+      "id": 1
+    }
   ]
 }

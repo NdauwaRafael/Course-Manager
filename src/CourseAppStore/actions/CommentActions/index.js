@@ -13,17 +13,37 @@ export function createCommentSuccess(comment) {
     }
 }
 
+export function loadCommentsSuccess(comments) {
+    return {
+        type: types.LOAD_COMMENT_SUCCESS,
+        comments
+    }
+}
 
-export function createComment(){
+
+export function createComment(comment) {
     return function (dispatch) {
         dispatch(beginAjaxCall);
-        return commentApi.saveComment()
-            .then(createdComment=>{
+        return commentApi.saveComment(comment)
+            .then(createdComment => {
                 dispatch(createCommentSuccess(createdComment))
             })
-            .catch(error=>{
+            .catch(error => {
                 throw (error)
             })
     }
 
+};
+
+export function loadComments(id) {
+    return function (dispatch) {
+        dispatch(beginAjaxCall());
+        return commentApi.loadCourseComments(id)
+            .then(comments => {
+                dispatch(loadCommentsSuccess(comments))
+            })
+            .catch(error => {
+                throw (error);
+            })
+    }
 }

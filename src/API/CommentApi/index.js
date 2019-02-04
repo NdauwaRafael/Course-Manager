@@ -9,9 +9,16 @@ const saveComment =  async function (comment) {
         },
         body: JSON.stringify(comment)
     };
-    return await (await (await (fetch('http://localhost:3004/comment', options)))).json();
+    return await (await (await (fetch('http://localhost:3004/comments', options)))).json();
 };
 
+const loadCourseComments = async function (id) {
+    return await (await (await (fetch('http://localhost:3004/comments?courseId='+id))))
+}
+
+
+
 export default {
-    saveComment
+    saveComment,
+    loadCourseComments
 }

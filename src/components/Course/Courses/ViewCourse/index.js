@@ -7,6 +7,10 @@ import CommentForm from './Comment/CommentForm';
 import {bindActionCreators} from "redux";
 import * as commentActions from "../../../../CourseAppStore/actions/CommentActions";
 import {alert} from "notie";
+import {loadComments} from "../../../../CourseAppStore/actions/CommentActions";
+import configureStore from "../../../../CourseAppStore/configureSore";
+
+
 
 class ViewCourse extends Component {
     constructor(props) {
@@ -20,6 +24,11 @@ class ViewCourse extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.onSave = this.onSave.bind(this);
     };
+
+    componentWillMount() {
+        const store = configureStore();
+        store.dispatch(loadComments(this.props.match.params.id));
+    }
 
     componentWillReceiveProps(nextProps, nextContext) {
         if (this.props.course.id !== nextProps.course.id) {
@@ -69,6 +78,7 @@ class ViewCourse extends Component {
                 alert({type: 3, text: 'Oops!!, An Error occurred while adding comment :(', time: 2})
             })
     }
+
 
     render() {
         const {course} = this.props;
