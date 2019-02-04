@@ -15,7 +15,7 @@ class ManageCourses extends Component {
 
         this.state = {
             course: Object.assign({}, this.props.course),
-            errors: '',
+            errors: {},
             saving: false
         };
 
@@ -81,11 +81,12 @@ class ManageCourses extends Component {
 
     onSave(e) {
         e.preventDefault();
-        const {course} = this.state;
-
-        if (!this.courseIsValid){
+        if (!this.courseIsValid()){
             return;
         }
+        const {course} = this.state;
+
+
         confirm({
             text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
             cancelCallback: () => {

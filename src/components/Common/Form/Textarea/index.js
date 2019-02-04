@@ -25,10 +25,10 @@ class Textarea extends Component {
                               id={name}
                               name={name}
                               onChange={onChange}
-                              className={"appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey" + validatorClass}
+                              className={"appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-grey" + validatorClass}
                               ref={name}
                               placeholder={label}/>
-                    <small className="text-grey-dark text-xs italic">{error}</small>
+                    <small className="text-red-lighter text-xs italic">{error}</small>
                 </div>
 
             </div>

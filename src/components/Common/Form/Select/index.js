@@ -43,7 +43,7 @@ class Select extends Component {
                             </svg>
                         </div>
                     </div>
-                    <small className="text-grey-dark text-xs italic">{error}</small>
+                    <small className="text-red-lighter text-xs italic">{error}</small>
                 </div>
 
             </div>
