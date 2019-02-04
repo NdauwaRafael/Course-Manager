@@ -39,9 +39,53 @@ class ManageCourses extends Component {
         return this.setState({course});
     };
 
+    courseIsValid() {
+        let {course, errors} = this.state;
+        let isValid = true;
+
+        if (course.title.length <= 3) {
+            errors.title = 'Course title must be at least 3 characters';
+            isValid = false;
+        } else {
+            errors.title = ''
+        }
+
+        if (course.authorId.length === 0) {
+            errors.authorId = 'Author is required';
+            isValid = false;
+        } else {
+            errors.authorId = ''
+        }
+
+        if (course.categoryId.length === 0) {
+            errors.categoryId = 'Please select a category';
+            isValid = false;
+        } else {
+            errors.categoryId = ''
+        }
+
+        if (course.description.length <= 20) {
+            errors.description = 'Description is too short. Provide at least 20 characters';
+            isValid = false;
+        } else {
+            errors.description = ''
+        }
+
+
+        this.setState({errors});
+
+        return isValid;
+
+    };
+
+
     onSave(e) {
         e.preventDefault();
         const {course} = this.state;
+
+        if (!this.courseIsValid){
+            return;
+        }
         confirm({
             text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
             cancelCallback: () => {
