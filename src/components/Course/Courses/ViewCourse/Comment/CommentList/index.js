@@ -5,7 +5,7 @@ import React from 'react';
 import CommentRow from './CommentRow'
 export default ({comments})=>{
     return (
-        <div>
+        <div className="w-full">
             {
                 comments.map(comment=><CommentRow key={comment.id} comment={comment}/>)
             }
