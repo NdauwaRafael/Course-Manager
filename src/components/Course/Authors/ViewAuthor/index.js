@@ -20,7 +20,7 @@ class ViewAuthor extends Component{
                 <AuthorRow key={author.id} author={author} />
             </div>
             <div
-                className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 leading-normal">
+                className=" bg-white lg:w-3/5 rounded-b lg:rounded-b-none lg:rounded-r p-4 leading-normal">
                 <p className="text-xl leading-tight mb-4"> {author.name}<span className="text-grey-dark text-sm"> | Courses</span></p>
                 <CourseList courses={courses}/>
                 </div>
