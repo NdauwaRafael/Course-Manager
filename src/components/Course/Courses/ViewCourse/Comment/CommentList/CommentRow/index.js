@@ -11,7 +11,7 @@ export default ({comment})=>{
             </div>
             <div
                 className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                <div className="mb-8">
+                <div className="">
                     <p className="text-xs text-grey-dark flex items-center">
                         {comment.created_at}
                     </p>
