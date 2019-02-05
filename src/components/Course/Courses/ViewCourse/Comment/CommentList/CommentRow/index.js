@@ -5,7 +5,7 @@ import React from 'react';
 
 export default ({comment})=>{
     return (
-        <div className="w-full lg:flex shadow mb-4 p-1">
+        <div className="w-full lg:flex shadow mb-4 p-1" >
             <div className="flex-none text-grey-dark text-center items-center justify-center flex flex-col">
                 <i className="fa fa-comments-o" aria-hidden="true"> </i>
             </div>

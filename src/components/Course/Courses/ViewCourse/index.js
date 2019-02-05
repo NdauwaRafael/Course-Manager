@@ -167,7 +167,8 @@ const getCommentsByCourseId = (comments, id) => {
     if (mycomments.length > 0) {
         return mycomments.map(comment => ({
             comment: comment.comment,
-            created_at: formatDate(comment.created_at)
+            created_at: formatDate(comment.created_at),
+            id: comment.id
         }));
     }
     return [];

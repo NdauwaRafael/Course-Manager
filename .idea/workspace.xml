@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="309">
+              <caret line="169" column="55" lean-forward="true" selection-start-line="169" selection-start-column="55" selection-end-line="169" selection-end-column="55" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -40,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+            <state relative-caret-position="180">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -153,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/index.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/CommentsReducer/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js" />
       </list>
     </option>
@@ -213,7 +214,7 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Course" type="462c0819:PsiDirectoryNode" />
               <item name="Courses" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
@@ -289,7 +290,7 @@
       <workItem from="1549003660300" duration="3222000" />
       <workItem from="1549266560127" duration="2731000" />
       <workItem from="1549282215472" duration="6128000" />
-      <workItem from="1549343577552" duration="1992000" />
+      <workItem from="1549343577552" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -309,7 +310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78704000" />
+    <option name="totallyTimeSpent" value="78968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -368,13 +369,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="CONFIG: Export Route files as a JSX object" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/fonts/css/all.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/font-awesome/scss/font-awesome.scss">
       <provider selected="true" editor-type-id="text-editor" />
@@ -541,16 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding>
-            <element signature="e#53#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="e#53#79#0" expanded="true" />
           </folding>
@@ -725,23 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentForm/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-331">
@@ -752,10 +719,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#53#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="169" column="55" lean-forward="true" selection-start-line="169" selection-start-column="55" selection-end-line="169" selection-end-column="55" />
+          <folding>
+            <element signature="e#53#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="180">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
