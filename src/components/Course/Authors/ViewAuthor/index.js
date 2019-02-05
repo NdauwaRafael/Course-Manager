@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import CourseList from "../../Courses/CourseList";
+import AuthorRow from "../AuthorList/AuthorRow";
 class ViewAuthor extends Component{
     constructor(props) {
         super(props);
@@ -13,10 +14,15 @@ class ViewAuthor extends Component{
     render() {
         const {courses, author} = this.props;
         return(
-            <div>
-                <p className="text-xl leading-tight"> {author.name}<span className="text-grey-dark text-sm"> | Courses</span></p>
-                <div className="mb-5 mt-4">
-                    <CourseList courses={courses}/>
+        <div className="w-full flex lg:flex">
+            <div
+                className="h-48 lg:h-auto rounded-t lg:rounded-t-none lg:rounded-l">
+                <AuthorRow key={author.id} author={author} />
+            </div>
+            <div
+                className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 leading-normal">
+                <p className="text-xl leading-tight mb-4"> {author.name}<span className="text-grey-dark text-sm"> | Courses</span></p>
+                <CourseList courses={courses}/>
                 </div>
             </div>
         );
