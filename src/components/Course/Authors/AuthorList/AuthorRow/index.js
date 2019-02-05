@@ -7,10 +7,10 @@ import {Link} from "react-router-dom";
 const AuthorRow = ({author}) => {
     return (
     <Link to={'/authors/'+author.id} className="w-1/3 px-4 mb-4 " >
-        <div className=" rounded overflow-hidden shadow-lg " key={author.id}>
+        <div className=" rounded overflow-hidden shadow-lg " >
             <img className="w-full" src={author.picture} alt="Sunset in the mountains" />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">{author.name}</div>
+                    <div className="font-bold text-xl mb-2 text-grey-darker">{author.name}</div>
                     <div className="text-grey-darker text-base">
                         <div className="flex items-center mb-2">
                                 <div className="text-sm">
