@@ -141,10 +141,31 @@ const getCourseById = (courses, id) => {
     }
     return null
 };
+
+const formatDate = (date) => {
+    let today = new Date(today);
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1;
+    let yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+
+    today = dd+'/'+mm+'/'+yyyy;
+
+    return today
+};
 const getCommentsByCourseId = (comments, id) => {
     let mycomments = comments.filter(comment => parseInt(comment.courseId) === parseInt(id));
-    if(mycomments.length > 0){
-        return mycomments;
+    if (mycomments.length > 0) {
+        return mycomments.map(comment => ({
+            comment: comment.comment,
+            created_at: formatDate(comment.created_at)
+        }));
     }
     return [];
 }
