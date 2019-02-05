@@ -13,7 +13,7 @@ const saveComment =  async function (comment) {
 };
 
 const loadCourseComments = async function () {
-    return await (await (await (fetch('http://localhost:3004/comments')))).json()
+    return await (await (await (fetch('http://localhost:3004/comments?_sort=created_at&_order=desc')))).json()
 }
 
 
