@@ -23,11 +23,6 @@ export default ({comment})=>{
                         <p className="mr-2 text-teal-light">
                             <i className="fa fa-thumbs-o-up" aria-hidden="true"> </i>
                         </p>
-
-                        {/*<p className="mr-2">*/}
-                            {/*<i className="fa fa-thumbs-o-down" aria-hidden="true"> </i>*/}
-                        {/*</p>*/}
-
                         <p className="mr-2 text-teal-light">
                             <i className="fa fa-heart-o" aria-hidden="true"> </i>
                         </p>
