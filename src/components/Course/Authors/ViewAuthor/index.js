@@ -3,6 +3,7 @@
  */
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import CourseList from "../../Courses/CourseList";
 class ViewAuthor extends Component{
     constructor(props) {
         super(props);
@@ -10,9 +11,13 @@ class ViewAuthor extends Component{
     }
 
     render() {
+        const {courses, author} = this.props;
         return(
             <div>
-
+                <p className="text-xl leading-tight"> {author.name}<span className="text-grey-dark text-sm"> | Courses</span></p>
+                <div className="mb-5 mt-4">
+                    <CourseList courses={courses}/>
+                </div>
             </div>
         );
     }
@@ -46,7 +51,8 @@ const mapStateToProps = (state, ownProps)=>{
                 }
             }
         return {
-            author: author
+            author: author,
+            courses: courses
         }
 };
 
