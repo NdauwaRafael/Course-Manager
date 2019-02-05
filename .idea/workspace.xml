@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="24" column="129" selection-start-line="24" selection-start-column="129" selection-end-line="24" selection-end-column="129" />
+            <state relative-caret-position="263">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -250,7 +251,7 @@
       <workItem from="1549266560127" duration="2731000" />
       <workItem from="1549282215472" duration="6128000" />
       <workItem from="1549343577552" duration="3457000" />
-      <workItem from="1549354733048" duration="5848000" />
+      <workItem from="1549354733048" duration="6150000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -270,7 +271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86017000" />
+    <option name="totallyTimeSpent" value="86319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -738,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="24" column="129" selection-start-line="24" selection-start-column="129" selection-end-line="24" selection-end-column="129" />
+        <state relative-caret-position="263">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>

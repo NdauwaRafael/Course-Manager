@@ -16,7 +16,7 @@ class ViewAuthor extends Component{
         return(
         <div className="w-full flex lg:flex">
             <div
-                className="h-48 lg:h-auto rounded-t lg:rounded-t-none lg:rounded-l">
+                className="h-48 lg:w-2/5 lg:h-auto rounded-t lg:rounded-t-none lg:rounded-l">
                 <AuthorRow key={author.id} author={author} />
             </div>
             <div
