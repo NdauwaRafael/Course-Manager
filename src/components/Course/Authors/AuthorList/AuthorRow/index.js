@@ -2,11 +2,11 @@
  * Created by Raphael Karanja on 2019-01-30.
  */
 import React from 'react'
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const AuthorRow = ({author}) => {
     return (
-    <div className="w-1/3 px-4 mb-4 " >
+    <Link to={'/authors/'+author.id} className="w-1/3 px-4 mb-4 " >
         <div className=" rounded overflow-hidden shadow-lg " key={author.id}>
             <img className="w-full" src={author.picture} alt="Sunset in the mountains" />
                 <div className="px-6 py-4">
@@ -42,7 +42,7 @@ const AuthorRow = ({author}) => {
                         className="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#{author.website}</span>
                 </div>
         </div>
-    </div>
+    </Link>
     )
 }
 
