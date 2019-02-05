@@ -128,7 +128,7 @@ class ViewCourse extends Component {
                     onSave={this.onSave}
                 />
 
-                <CommentList comments={comments}/>
+                <CommentList comments={comments} />
 
             </div>
         );

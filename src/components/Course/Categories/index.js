@@ -15,11 +15,12 @@ class Courses extends Component {
         this.state = {}
     };
 
+
     render() {
         const {categories} = this.props
         return (
             <div>
-                <CategoryList categories={categories} />
+                <CategoryList categories={categories}/>
             </div>
         );
     }

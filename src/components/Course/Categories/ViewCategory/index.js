@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from "redux";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import categoryActions from '../../../../CourseAppStore/actions/CategoryActions'
+import * as categoryActions from '../../../../CourseAppStore/actions/CategoryActions'
 
 class ViewCategory extends Component {
     constructor(props, context) {
@@ -15,9 +15,10 @@ class ViewCategory extends Component {
     };
 
     render() {
+        const {category} = this.props;
         return (
             <div>
-
+                <p className="text-xl leading-tight"> {category.name}</p>
             </div>
         );
     }
