@@ -7,7 +7,8 @@ import CommentForm from './Comment/CommentForm';
 import {bindActionCreators} from "redux";
 import * as commentActions from "../../../../CourseAppStore/actions/CommentActions";
 import {alert} from "notie";
-import CommentList from './Comment/CommentList'
+import CommentList from './Comment/CommentList';
+import moment from 'moment'
 
 
 class ViewCourse extends Component {
@@ -143,21 +144,23 @@ const getCourseById = (courses, id) => {
 };
 
 const formatDate = (date) => {
-    let today = new Date(today);
-    let dd = today.getDate();
-    let mm = today.getMonth() + 1;
-    let yyyy = today.getFullYear();
-    if (dd < 10) {
-        dd = '0' + dd;
-    }
+    // let today = new Date(today);
+    // let dd = today.getDate();
+    // let mm = today.getMonth() + 1;
+    // let yyyy = today.getFullYear();
+    // if (dd < 10) {
+    //     dd = '0' + dd;
+    // }
+    //
+    // if (mm < 10) {
+    //     mm = '0' + mm;
+    // }
+    //
+    // today = dd+'/'+mm+'/'+yyyy;
+    //
+    // return today
 
-    if (mm < 10) {
-        mm = '0' + mm;
-    }
-
-    today = dd+'/'+mm+'/'+yyyy;
-
-    return today
+    return moment(date).format('MMMM Do YYYY, h:mm:ss a');
 };
 const getCommentsByCourseId = (comments, id) => {
     let mycomments = comments.filter(comment => parseInt(comment.courseId) === parseInt(id));

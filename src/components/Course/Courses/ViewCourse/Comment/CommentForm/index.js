@@ -8,7 +8,7 @@ const CommentForm = ({onSave, comment, onChange, error}) => {
     return (
         <div className="w-full lg:flex">
             <div
-                className="w-full max-w-lg border-r border-b border-l border-grey-light lg:border-l lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                className="w-full max-w-lg  bg-white rounded-b lg:rounded-b-none lg:rounded-l lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                 <div className="mb-8">
                     <p className="text-sm text-grey-dark flex items-center">
                         <svg className="fill-current text-grey w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg"
