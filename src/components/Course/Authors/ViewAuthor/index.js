@@ -35,14 +35,14 @@ const getAuthorById = (authors, id)=>{
 const getCoursesByAuthorId = (courses, id)=>{
     let pageCourses = courses.filter(course => parseInt(course.authorId) === parseInt(id));
     if (pageCourses.length > 0){
-        return pageCourses[0]
+        return pageCourses
     }
 
     return []
 }
 const mapStateToProps = (state, ownProps)=>{
             let author = {};
-            let courses = []
+            let courses = [];
             let authorId = ownProps.match.params.id;
             if(authorId && state.authors){
                 author = getAuthorById(state.authors, authorId);
@@ -57,7 +57,7 @@ const mapStateToProps = (state, ownProps)=>{
 };
 
 const mapDispatchToProps = (dispatch)=>{
-
+    return {}
 };
 
 export default connect(

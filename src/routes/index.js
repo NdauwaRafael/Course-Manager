@@ -10,7 +10,9 @@ import ViewCoursePage from '../components/Course/Courses/ViewCourse'
 import ManageCourse from '../components/Course/Courses/ManageCourse';
 import CategoriesPage from '../components/Course/Categories'
 import AuthorsPage from '../components/Course/Authors';
-import ViewCategory from '../components/Course/Categories/ViewCategory'
+import ViewAuthor from '../components/Course/Authors/ViewAuthor'
+import ViewCategory from '../components/Course/Categories/ViewCategory';
+
 
 export default (
     <Switch>
@@ -23,6 +25,6 @@ export default (
         <Route path="/categories" exact component={CategoriesPage} />
         <Route path="/categories/:id" exact component={ViewCategory} />
         <Route path="/authors" exact component={AuthorsPage} />
-        <Route path="/author" exact component={AuthorsPage} />
+        <Route path="/authors/:id" exact component={ViewAuthor} />
     </Switch>
 )
