@@ -6,6 +6,7 @@ import {bindActionCreators} from "redux";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import * as categoryActions from '../../../../CourseAppStore/actions/CategoryActions'
+import CourseList from "../../Courses/CourseList";
 
 class ViewCategory extends Component {
     constructor(props, context) {
@@ -15,10 +16,13 @@ class ViewCategory extends Component {
     };
 
     render() {
-        const {category} = this.props;
+        const {category, courses} = this.props;
         return (
             <div>
-                <p className="text-xl leading-tight"> {category.name}</p>
+                <p className="text-xl leading-tight"> {category.name}<span className="text-grey-dark text-sm"> | Courses</span></p>
+                <div className="mb-5 mt-4">
+                    <CourseList courses={courses}/>
+                </div>
             </div>
         );
     }
@@ -31,6 +35,13 @@ const getCategoryByID = (categories, id)=>{
     }
     return {}
 };
+const getCoursesByCategory = (courses, id)=>{
+    let pageCourses = courses.filter(course=>parseInt(course.categoryId) === parseInt(id));
+    if (pageCourses.length > 0){
+        return pageCourses;
+    }
+    return []
+};
 
 ViewCategory.propTypes = {
     category: PropTypes.object.isRequired,
@@ -38,12 +49,15 @@ ViewCategory.propTypes = {
 };
 const mapStateToProps = (state, ownProps) => {
     let category =  {};
+    let courses =  [];
     let categoryId = ownProps.match.params.id;
     if(categoryId && state.categories.length > 0){
-        category = getCategoryByID(state.categories, categoryId)
+        category = getCategoryByID(state.categories, categoryId);
+        courses = getCoursesByCategory(state.courses, categoryId)
     }
     return {
-        category: category
+        category: category,
+        courses: courses
     }
 };
 const mapDispatchToProps = (dispatch) => {
