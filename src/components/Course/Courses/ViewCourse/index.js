@@ -8,7 +8,8 @@ import {bindActionCreators} from "redux";
 import * as commentActions from "../../../../CourseAppStore/actions/CommentActions";
 import {alert} from "notie";
 import CommentList from './Comment/CommentList';
-import moment from 'moment'
+import moment from 'moment';
+import {Link} from 'react-router-dom';
 
 
 class ViewCourse extends Component {
@@ -116,6 +117,20 @@ class ViewCourse extends Component {
                                 <p className="text-grey-dark text-xs">
                                     {author.email}
                                 </p>
+                            </div>
+                        </div>
+
+                        <div className="flex justify-end w-full">
+                            <div className="inline-flex">
+                                <Link
+                                    to={'/course/edit/'+course.id}
+                                    className="bg-transparent hover:bg-blue text-blue-light hover:text-blue-lightest font-bold py-2 px-4 rounded-l">
+                                    Edit
+                                </Link>
+                                <button
+                                    className="hover:bg-red text-red-light hover:text-red-lightest font-bold py-2 px-4 rounded-r">
+                                    Delete
+                                </button>
                             </div>
                         </div>
                     </div>

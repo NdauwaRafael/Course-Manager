@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c666686-05b4-4efb-a824-41c2427518d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="432">
+              <caret line="126" column="116" selection-start-line="126" selection-start-column="116" selection-end-line="126" selection-end-column="116" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -25,13 +25,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="10" column="81" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="81" />
+            <state relative-caret-position="612">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
-                <element signature="e#53#78#0" expanded="true" />
+                <element signature="e#53#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/AjuxStatusReducer/index.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/CourseAppStore/reducers/AjaxStatusReducer/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/index.js" />
         <option value="$USER_HOME$/Downloads/oasis.svg" />
         <option value="$USER_HOME$/Downloads/palm-tree (1).svg" />
@@ -110,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/index.js" />
         <option value="$PROJECT_DIR$/src/API/CommentApi/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/Comment/CommentList/CommentRow/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Categories/CategoriesList/CategoryChild/index.js" />
@@ -118,6 +116,8 @@
         <option value="$PROJECT_DIR$/src/routes/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/AuthorList/AuthorRow/index.js" />
         <option value="$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js" />
       </list>
     </option>
   </component>
@@ -165,7 +165,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Course" type="462c0819:PsiDirectoryNode" />
-              <item name="Authors" type="462c0819:PsiDirectoryNode" />
+              <item name="Courses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
@@ -173,8 +173,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Course" type="462c0819:PsiDirectoryNode" />
-              <item name="Authors" type="462c0819:PsiDirectoryNode" />
-              <item name="AuthorList" type="462c0819:PsiDirectoryNode" />
+              <item name="Courses" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic_redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
+              <item name="Courses" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseList" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseRow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic_redux" type="b2602c69:ProjectViewProjectNode" />
@@ -251,7 +261,7 @@
       <workItem from="1549266560127" duration="2731000" />
       <workItem from="1549282215472" duration="6128000" />
       <workItem from="1549343577552" duration="3457000" />
-      <workItem from="1549354733048" duration="6150000" />
+      <workItem from="1549354733048" duration="6829000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE: Add basic Route configuration logic in place">
       <created>1547887945660</created>
@@ -271,7 +281,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86319000" />
+    <option name="totallyTimeSpent" value="86998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -650,16 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="e#53#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -674,16 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,6 +717,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#53#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/AuthorList/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -737,12 +737,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Course/Authors/ViewAuthor/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/ViewCourse/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="432">
+          <caret line="126" column="116" selection-start-line="126" selection-start-column="116" selection-end-line="126" selection-end-column="116" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Course/Courses/CourseList/CourseRow/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#53#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
